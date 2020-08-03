@@ -32,12 +32,12 @@ section {
     display: block;
   }
   main {
-    background-image: url("http://source.unsplash.com/ygxq7srZJF0")
+    background-image: url("https://source.unsplash.com/ygxq7srZJF0")
   }
 }
 @media (min-width: 600px) {
   main {
-    background-image: url("http://source.unsplash.com/ewzHvxHl-Ak");
+    background-image: url("https://source.unsplash.com/ewzHvxHl-Ak");
   }
 }
 
