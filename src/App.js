@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
+import Weather from "./Weather";
+import News from "./News";
+import Todo from "./Todo";
+
+
+
+//const styles= {background-image: url("http://source.unsplash.com/featured/?nature,mountains")};
+
+
+
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <div className="content">
+        <h1>Good Morning, Ilan</h1>
+        <Weather/>
+        <section>
+          <div>
+            <h3>Todo</h3>
+            <Todo/>
+          </div>
+          <div>
+            <h3>Top headlines</h3>
+            <News/>
+          </div>
+        </section>
+        </div>
+    </main>
   );
 }
+
 
 export default App;

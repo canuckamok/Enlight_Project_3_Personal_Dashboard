@@ -1,38 +1,161 @@
-.App {
+main {
+
+  color: #fff;
+  justify-content: center;
+  align-content: center;
   text-align: center;
+  font-family: Roboto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top-center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  max-width: 30em;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: rgb(200, 200, 200, .1);
+  font-family: Open Sans;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+
+}
+
+@media (max-width: 600px) {
+  section {
+    display: block;
+  }
+  main {
+    background-image: url("http://source.unsplash.com/ygxq7srZJF0")
+  }
+}
+@media (min-width: 600px) {
+  main {
+    background-image: url("http://source.unsplash.com/ewzHvxHl-Ak");
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 24px;
+}
+
+a {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+/*.App {
+  max-width: 30em;
+  margin: 10em auto;
+  padding: 32px;
+  border: 1px solid #ccc;
+  align-items: center;
+  background-color: rgb(68, 122, 213, 0.7)
+}*/
+
+/*body{
+  background-image: url("./IMG_3329.JPG");
+  background-size: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}*/
+
+.todo-input{
+  font: inherit;
+  font-size: 24px;
+  /*width: 100%;*/
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 0 .5rem;
+
+}
+
+.todo-input:focus {
+  outline:none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.todo {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor:pointer;
+  background: #d9d9d9;
+  font-size: 10px;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  transition: all 300ms ease;
+}
+
+.checkbox:hover {
+  opacity: 0.8;
+}
+
+.delete {
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  /* margin-left: 94%; */
+  /* margin-top: -28px; */
+  color: #fff;
+}
+
+.delete:hover {
+  opacity: 0.8;
+}
+
+.container {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-top: 8px;
+  height: 30px;
+  background: #255ead;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem .5rem;
+  
+}
+
+.appContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.listCount {
+  margin-top: 8px;
+  font-size: 20px;
+  padding:0 .5rem;
+  color: #fff;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.instruction {
+  font-size: 15px;
+  font-style: italic;
+  color: #fff;
+  margin: 0 .5rem;
 }
